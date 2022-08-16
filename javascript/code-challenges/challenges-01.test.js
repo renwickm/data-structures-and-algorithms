@@ -37,7 +37,7 @@ const addExclamation = (arr) => {
     newArray [index] = `${value}!`;
   });
 
-  return newArray;
+  return newArray
   // Solution code here...
 };
 
@@ -118,7 +118,7 @@ const addNumbers = (num, arr, times, callback) => {
 
     callback(arr, num);
 
-  }
+  };
 
   return arr;
 
@@ -171,6 +171,27 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
+
+  let newArray = [];
+
+  for(let i = 0; i <= arr.length; i++){
+    if (i % 3) {
+    newArray.push('Fizz')
+    } else if (i % 5){
+    newArray.push("Buzz")
+    } else if (i % 3 && i % 5){
+    newArray.push('Fizz Buzz')
+    }
+    else {
+    newArray.push();
+  };
+
+  arr.forEach((i) => {
+    newArray.push(i)
+  });
+
+  return newArray;
+
   // Solution code here...
 };
 
@@ -225,7 +246,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
   test('It should print out messages or numbers', () => {
