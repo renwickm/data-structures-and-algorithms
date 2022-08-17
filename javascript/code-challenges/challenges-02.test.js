@@ -29,6 +29,11 @@ Write a function named addOne that, given an array of numbers, uses map to retur
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
+
+  let plusOne = arr.map(n => n + 1);
+  return plusOne;
+
+
   // Solution code here...
 };
 
