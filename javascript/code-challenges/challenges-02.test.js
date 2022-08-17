@@ -44,6 +44,14 @@ Write a function named addQuestion that, given an array of strings, uses map to 
 ------------------------------------------------------------------------------------------------ */
 
 const addQuestion = (arr) => {
+
+  let newString = [''];
+
+  arr.map((value, index) => {
+    newString [index] = `${value}?`;
+  });
+
+  return newString;
   // Solution code here...
 };
 
